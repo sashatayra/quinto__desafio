@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #000;
+	font-family: 'Nunito', sans-serif;
+	background-image: url(../assets/1539.jpg);
+	background-size: contain;
+	background-blend-mode: hard-light;
+
+
+}
+/*Esto es index.html*/
+
+
+#containerGrid{
+	background-image: url(../assets/1539.jpg);
+	background-size: contain;
+	background-blend-mode: hard-light;
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"containerFlex"
+	"contenido"
+	"fotos"
+	"footer"
+	"arriba"
+
+}
+
+@media all and (max-width: 768px){			
+	.fotos{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.items{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}	
+
+.fotos{
+	grid-area: fotos;
+	display: flex;
+	justify-content: space-around;
+}
+
+.imagenUno{
+    height: 25rem;
+    width: 25rem;
+}
+
+.imagenDos{
+	height: 25rem;
+    width: 25rem;
+}
+
+.imagenTres{
+    height: 25rem;
+    width: 25rem;
+}
+
+.titulo{
+	font-family: 'Koulen', cursive;
+	font-size: 20px;
+}
+
+.header{
+	display: flex;
+	/*position: sticky;*/
+	justify-content: space-around;
+	grid-area: header;
+}
+.menu{
+	display: flex;
+	background-color: grey;
+	color: #000;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	justify-content: space-around;
+	list-style-type: none;
+	text-decoration: none;
+	grid-area: header;
+}
+
+
+.imagenLogo{
+	border-radius: 40%;
+}
+
+.itemUno{
+	min-width: 20%;
+	
+}
+
+.itemDos{
+	color: #fff;
+	min-width: 20%;
+}
+
+.itemTres{
+	color: #fff;
+	min-width: 20%;
+}
+
+.itemCuatro{
+	min-width: 20%;
+}
+
+.itemCinco{
+	min-width: 20%;
+}
+.items{
+	display: flex;
+	color: #fff;
+	background: radial-gradient(#ccc, #000);
+	justify-content: center;
+	margin: 5%;
+	padding: 5%;
+
+}
+
+.containerLogo{
+	display: flex;
+	justify-content:center;
+	padding: 20px 0;
+}
+
+.contenido{
+	grid-area: contenido;
+}
+.arriba{
+	grid-area: arriba;
+}
+.footer{
+	display: flex;
+	margin: 25px;
+	padding: 10px;
+	background-color: grey;
+	color: #000;
+	justify-content: space-around;
+	grid-area: footer;
+
+}
+
+.arriba{
+	text-decoration: none;
+	color: blue;
+	margin-top: 2rem;
+	grid-area: arriba;
+}
+
+.menu{
+	display: flex;
+	background-color: grey;
+	color: #000;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	justify-content: space-around;
+	list-style-type: none;
+	text-decoration: none;
+	grid-area: header;
+}
+
+/*sobremi.html*/
+.containerGridTres{
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"contenidoSob"
+	"footer"
+	"arriba"
+}
+
+.fotoSobremi{
+	height: 90vh;
+	width: 90w;
+}
+
+@media all and (max-width: 768px){			
+	.containerGridTres{
+		display: grid;
+		grid-template-areas: 
+		"header " 
+		"contenidoSob"
+		"footer"
+		"arriba"
+	}
+
+	.contenidoSob{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.contenidoSob{
+	display: flex;
+	background-color: #000;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	grid-area: contenidoSob;
+}
+
+.sobremi{
+	margin: 1rem;
+}
