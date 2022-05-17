@@ -57,16 +57,34 @@ body{
 .imagenUno{
     height: 25rem;
     width: 25rem;
+  	transition: all 1s;
 }
+
+.imagenUno:hover{
+	height: 30rem;
+	width: 30rem;
+} 
 
 .imagenDos{
 	height: 25rem;
     width: 25rem;
+    transition: all 1s;
+}
+
+.imagenDos:hover{
+	height: 30rem;
+	width: 30rem;
 }
 
 .imagenTres{
     height: 25rem;
     width: 25rem;
+    transition: all 1s;
+}
+
+.imagenTres:hover{
+	height: 30rem;
+	width: 30rem;
 }
 
 .titulo{
@@ -96,6 +114,19 @@ body{
 
 .imagenLogo{
 	border-radius: 40%;
+	animation-duration: 1.2s;
+   	animation-name: aparecer;
+   	animation-iteration-count: 5s;
+}
+
+@keyframes aparecer{
+	0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+
 }
 
 .itemUno{
